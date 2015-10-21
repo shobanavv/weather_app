@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Weather Forecast</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id = "main-container">
+            <h1> Weather Forecast</h1>
+            <h2> Enter city name, State.</h2>
+            <input type = "text" value = "San Francisco, CA" id = "search-id">
+            <button id = "button-id"> Go</button>
+            <div class = "flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class = "flipper">
+            <div id = "front">
+                <div id = "time"></div>
+                <div id = "second-row">
+                    <div id = "day"></div>
+                    <div id = "date"></div>
+                </div>
+                <div id = "city-name"></div>
+                <div id = "state" class = "gen-align"></div>
+                <div id = "country" class = "gen-align"></div>
+                <div id = "temp"></div>
+                <div id = "climate" class = "gen-align"></div>
+            </div>
+
+            <div id = "back">
+                <ul id = "back-content">
+                    <li id = "humid"></li>
+                    <li id = "wind"></li>
+                    <li id = "visib"></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+            <div id = "message"></div>
+        </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js">  </script>
+    </body>
+</html>
